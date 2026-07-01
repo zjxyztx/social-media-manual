@@ -2055,7 +2055,16 @@
       var copyBtns = document.querySelectorAll('.kw-copy');
       copyBtns.forEach(function(btn) {
         btn.addEventListener('click', function() {
-          var text = this.previousElementSibling.textContent.trim();
+          var container = this.previousElementSibling;
+          var text = '';
+          container.childNodes.forEach(function(node) {
+            if (node.nodeType === Node.TEXT_NODE) {
+              text += node.textContent;
+            } else if (node.nodeType === Node.ELEMENT_NODE && !node.classList.contains('kw-rank')) {
+              text += node.textContent;
+            }
+          });
+          text = text.trim();
           if (navigator.clipboard) {
             navigator.clipboard.writeText(text).then(function() {
               showCopied(btn);
