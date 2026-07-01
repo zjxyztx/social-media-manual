@@ -469,6 +469,55 @@
       color: var(--accent);
     }
 
+    /* Copy keyword button */
+    .kw-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.7rem 1rem;
+      background: var(--bg2);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.88rem;
+      transition: background 0.15s;
+    }
+    .kw-item:hover {
+      background: var(--accent-bg);
+      border-color: var(--accent);
+    }
+    .kw-text {
+      flex: 1;
+      overflow-wrap: break-word;
+      word-break: break-all;
+      padding-right: 0.75rem;
+    }
+    .kw-copy {
+      background: var(--bg);
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      padding: 0.3rem 0.7rem;
+      font-size: 0.72rem;
+      font-family: var(--font);
+      font-weight: 600;
+      color: var(--accent);
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .kw-copy:hover {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+    .kw-copy.copied {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
     /* Divider */
     .divider {
       border: none;
@@ -608,6 +657,8 @@
             <li class="nav-item"><a href="#ch2-interact" data-page="ch2-interact">2.3 互动策略</a></li>
             <li class="nav-item"><a href="#ch2-template" data-page="ch2-template">2.4 话术模板</a></li>
             <li class="nav-item"><a href="#ch2-daily" data-page="ch2-daily">2.5 每日流程</a></li>
+            <li class="nav-item"><a href="#ch2-land-keywords" data-page="ch2-land-keywords">2.6 陆用关键词</a></li>
+            <li class="nav-item"><a href="#ch2-marine-keywords" data-page="ch2-marine-keywords">2.7 船舶关键词</a></li>
           </ul>
         </div>
 
@@ -1195,6 +1246,131 @@
             <li><strong>周三</strong> — 发布 1 篇原创内容（技术文章/案例分析）</li>
             <li><strong>周五</strong> — 回顾本周互动数据，调整下周重点</li>
           </ul>
+        </div>
+
+        <!-- ==================== CH2-LAND-KEYWORDS ==================== -->
+        <div class="page-section" id="page-ch2-land-keywords">
+          <h2 class="section-title">2.6 陆用/工业发电机组 LinkedIn 搜索关键词</h2>
+
+          <p>以下关键词组合可直接用于 LinkedIn 搜索目标客户。点击「复制」按钮一键复制，粘贴到 LinkedIn 搜索框中即可。</p>
+
+          <h3>按角色搜索</h3>
+
+          <h4>工业设施管理者</h4>
+          <div class="kw-item"><span class="kw-text">"Facility Manager" generator</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Plant Manager" power</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Plant Engineer" diesel</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Operations Manager" electricity</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Maintenance Manager" generator</span><button class="kw-copy">复制</button></div>
+
+          <h4>工程项目采购</h4>
+          <div class="kw-item"><span class="kw-text">"Project Manager" power plant</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Procurement Manager" generator</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Purchasing Manager" diesel generator</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Electrical Engineer" standby power</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Construction Manager" generator</span><button class="kw-copy">复制</button></div>
+
+          <h3>按行业搜索</h3>
+
+          <h4>数据中心</h4>
+          <div class="kw-item"><span class="kw-text">"Data Center" backup power</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Data Center" diesel generator</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Critical Power" manager</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"UPS" generator commissioning</span><button class="kw-copy">复制</button></div>
+
+          <h4>矿山与油气</h4>
+          <div class="kw-item"><span class="kw-text">"Mining" generator</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Mining" power supply</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Oil & Gas" generator</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Drilling" power</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Remote Power" generator</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Mobile Power" diesel</span><button class="kw-copy">复制</button></div>
+
+          <h4>制造与商业建筑</h4>
+          <div class="kw-item"><span class="kw-text">"Manufacturing" generator</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Hospital" emergency generator</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Hotel" generator</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Mall" backup power</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Commercial Building" power</span><button class="kw-copy">复制</button></div>
+
+          <h3>按技术需求搜索</h3>
+          <div class="kw-item"><span class="kw-text">"Synchronization" generator</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Parallel Operation" diesel</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"EPSS" emergency power</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Continuous Power" diesel</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Soundproof" generator</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Containerized" generator</span><button class="kw-copy">复制</button></div>
+
+          <div class="callout tip">
+            <div class="callout-label">搜索技巧</div>
+            <p>LinkedIn 搜索支持引号精确匹配（""）和空格组合条件。例如 <code>"Plant Manager" diesel</code> 会返回职位包含 Plant Manager 且内容或描述包含 diesel 的用户。在搜索结果中点击「People」筛选人员。</p>
+          </div>
+        </div>
+
+        <!-- ==================== CH2-MARINE-KEYWORDS ==================== -->
+        <div class="page-section" id="page-ch2-marine-keywords">
+          <h2 class="section-title">2.7 船用发电机组 LinkedIn 搜索关键词</h2>
+
+          <p>以下关键词组合可直接用于 LinkedIn 搜索船用行业目标客户。点击「复制」按钮一键复制。</p>
+
+          <h3>按角色搜索</h3>
+
+          <h4>船上工程师</h4>
+          <div class="kw-item"><span class="kw-text">"Marine Engineer"</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Chief Engineer" vessel</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Second Engineer" ship</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Technical Superintendent" marine</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Marine Superintendent" fleet</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Fleet Manager" shipping</span><button class="kw-copy">复制</button></div>
+
+          <h4>船厂与修船</h4>
+          <div class="kw-item"><span class="kw-text">"Shipyard Manager"</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Shipyard" procurement</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Shipyard" project manager</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Dry Dock" manager</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Ship Repair" superintendent</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Naval Architect" marine</span><button class="kw-copy">复制</button></div>
+
+          <h4>船东与运营</h4>
+          <div class="kw-item"><span class="kw-text">"Vessel Manager" shipping</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Operations Manager" maritime</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Chartering" marine</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Shipping Company" procurement</span><button class="kw-copy">复制</button></div>
+
+          <h3>按船型搜索</h3>
+          <div class="kw-item"><span class="kw-text">"Bulk Carrier" superintendent</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Container Ship" engineer</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Tanker" marine engineer</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Offshore" generator</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Fishing Vessel" engineer</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Tug Boat" marine</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"FPSO" marine superintendent</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"ROV" vessel</span><button class="kw-copy">复制</button></div>
+
+          <h3>按技术需求搜索</h3>
+          <div class="kw-item"><span class="kw-text">"Marine Generator"</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Auxiliary Engine" ship</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Shipboard Power"</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Emergency Generator" marine</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Shaft Generator"</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"PTO Generator" marine</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"IMO Tier III" marine</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"CCS Certified" marine</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"DNV" generator</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"ABS" marine power</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Classification Society" marine</span><button class="kw-copy">复制</button></div>
+
+          <h3>按公司类型搜索</h3>
+          <div class="kw-item"><span class="kw-text">"Ship Owner" diesel</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Ship Management" technical</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Shipyard" marine electrical</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Marine Equipment" supplier</span><button class="kw-copy">复制</button></div>
+          <div class="kw-item"><span class="kw-text">"Marine Service" provider</span><button class="kw-copy">复制</button></div>
+
+          <div class="callout tip">
+            <div class="callout-label">搜索技巧</div>
+            <p>建议先搜索 <code>"Marine Engineer"</code> 或 <code>"Shipyard Manager"</code> 等宽泛关键词，然后通过「Locations」筛选目标国家/地区，再结合公司规模进一步缩小范围。找到目标客户后，通过其个人主页的「Mutual Connections」扩展人脉。</p>
+          </div>
         </div>
 
         <!-- ==================== CH3 ==================== -->
@@ -1790,6 +1966,41 @@
       }
       window.addEventListener('hashchange', handleHash);
       handleHash();
+    })();
+
+    // === Copy to Clipboard ===
+    (function() {
+      var copyBtns = document.querySelectorAll('.kw-copy');
+      copyBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var text = this.previousElementSibling.textContent.trim();
+          if (navigator.clipboard) {
+            navigator.clipboard.writeText(text).then(function() {
+              showCopied(btn);
+            });
+          } else {
+            var ta = document.createElement('textarea');
+            ta.value = text;
+            ta.style.position = 'fixed';
+            ta.style.opacity = '0';
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand('copy');
+            document.body.removeChild(ta);
+            showCopied(btn);
+          }
+        });
+      });
+
+      function showCopied(btn) {
+        var original = btn.textContent;
+        btn.textContent = '已复制';
+        btn.classList.add('copied');
+        setTimeout(function() {
+          btn.textContent = original;
+          btn.classList.remove('copied');
+        }, 1200);
+      }
     })();
   </script>
 </body>
